@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Proxifiers</title>
+</head>
+
+
+<style>
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #141111ac;
+            }
+            button {
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: #3498db;
+                color: #ffffff;
+                border: none;
+                border-radius: 5;
+                cursor: pointer;
+            }
+        </style>
+
+
+
+<body>
+   <p> Search Bar </p>
+
+<center>
+
+<form  action="/search" method="get" class="search-bar">
+    <label for="search-input">Search site</label>
+    <input type="search" id="search-input" name="q" placeholder="If you want to search then start typing." />
+    <button type="submit">Search</button>  
+</form>
+
+</center>
+
+</body>
+
+
+
+    </head>
+    <body>
+           <style>
+.top-right-fixed {
+  position: fixed; /* Positions relative to the browser window */
+  top: 0;          /* Aligns to the top edge */
+  right: 0;        /* Aligns to the right edge */
+  padding: 10px;   /* Adds some space around the text */
+  background-color: lightgray; /* Optional: for visibility */
+  z-index: 1000;   /* Optional: ensures it's above other content */
+}
+</style>
+        <button onclick="openNewWindow()">Cloak</button>
+
+        <script>
+            function openNewWindow() {
+                var newWindow = window.open();
+
+                var iframe = document.createElement('iframe');
+                iframe.style.width = '100%';
+                iframe.style.height = '600px';
+                iframe.style.border = 'none';
+                iframe.src = 'https://www.example.com/';
+
+                newWindow.document.body.appendChild(iframe);
+            }
+        </script>
+
+
+</html>
